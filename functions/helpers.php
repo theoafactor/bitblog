@@ -1,7 +1,7 @@
 <?php
 
 //config
-define('BASE_URL', 'http://localhost/BitBlog/');
+define('BASE_URL', 'http://localhost/bitblog/');
 
 function redirect($url) 
 {    

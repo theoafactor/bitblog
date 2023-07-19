@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+
+  bitblog:
+    image: bitblog:2
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - 74:80
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3308:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+

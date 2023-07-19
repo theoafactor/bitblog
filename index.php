@@ -1,4 +1,5 @@
 <?php
+     ini_set("display_errors", 1);
      require_once 'functions/helpers.php';
      require_once 'functions/pdo_connection.php';
      ?>
