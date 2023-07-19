@@ -6,7 +6,7 @@ pipeline{
            steps{
                 
                  sh '''
-                    sudo ssh -o StrictHostKeyChecking=no -t -i /var/lib/jenkins/jk.pem ubuntu@ec2-18-218-127-85.us-east-2.compute.amazonaws.com 
+                    sudo ssh -i /var/lib/jenkins/jk.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-18-218-127-85.us-east-2.compute.amazonaws.com 
                     cd /var
                     sudo rm -rf html
                     sudo mkdir html
