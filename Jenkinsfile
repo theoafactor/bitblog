@@ -1,6 +1,6 @@
 pipeline{
     agent any
-
+    
     stages{
         stage("build"){
            steps{
@@ -13,6 +13,7 @@ pipeline{
                     cd html
                     sudo git clone https://github.com/theoafactor/bitblog.git .
 
+                    sudo docker build -t bitblog:1 .
                     
                     '''
 
