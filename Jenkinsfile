@@ -11,7 +11,7 @@ pipeline{
                     sudo rm -rf html
                     sudo mkdir html
                     cd html
-                    sudo git clone https://github.com/theoafactor/bitblog.git
+                    sudo git clone https://github.com/theoafactor/bitblog.git .
 
                     
                     '''
