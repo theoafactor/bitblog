@@ -11,7 +11,9 @@ pipeline{
                     sudo mkdir html
                     sudo chown -R jenkins:jenkins html/
                     cd /var/html
-                    sudo git clone https://github.com/theoafactor/bitblog.git . <<EOF
+                    sudo git clone https://github.com/theoafactor/bitblog.git . 
+                    sudo docker build -t bitblog:1 .
+                    <<EOF
                     """
                
             
