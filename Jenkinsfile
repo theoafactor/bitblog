@@ -4,8 +4,13 @@ pipeline{
     stages{
         stage("build"){
            steps{
-                 // all images are built and pushed to Docker Hub
-                 echo "build stage"
+                
+                 sh `
+                    ssh -o StrictHostKeyChecking=no -T -i /var/lib/jenkins/jk.pem ubuntu@ec2-18-218-127-85.us-east-2.compute.amazonaws.com 
+                
+                    `
+
+
            }
             
         }
