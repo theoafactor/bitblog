@@ -10,7 +10,7 @@ pipeline{
                 
                sh  """
                         ## get the project
-                        cd /home/ubuntu/agentspace/bitblog_master
+                        cd /home/ubuntu/agentspace/workspace/bitblog_master
                         ls
 
 
