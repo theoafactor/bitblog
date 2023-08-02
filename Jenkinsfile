@@ -6,7 +6,7 @@ pipeline{
            steps{
                 
                sh  """
-                        echo 'Welcome here'
+                        echo 'Welcome here .. test'
                     """
                
             
