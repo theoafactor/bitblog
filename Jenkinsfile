@@ -3,6 +3,9 @@ pipeline{
 
     stages{
         stage("build"){
+            agent {
+                label docker_agent
+            }
            steps{
                 
                sh  """
