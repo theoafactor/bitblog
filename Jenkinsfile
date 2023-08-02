@@ -11,9 +11,7 @@ pipeline{
                sh  """
                         ## get the project
                         cd /home/ubuntu/agentspace/workspace/bitblog_master
-                        ls
-
-
+                        sudo docker-compose up -d 
 
                        
                     """
