@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("build"){
             agent {
-                label docker_agent
+                label docker_agent_label
             }
            steps{
                 
