@@ -9,7 +9,12 @@ pipeline{
            steps{
                 
                sh  """
-                        sudo docker ps 
+                        ## get the project
+                        cd /home/ubuntu/agentspace/bitblog_master
+                        ls
+
+
+
                        
                     """
                
