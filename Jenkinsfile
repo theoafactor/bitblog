@@ -9,7 +9,8 @@ pipeline{
            steps{
                 
                sh  """
-                        echo 'Welcome here .. test'
+                        sudo docker ps 
+                       
                     """
                
             
