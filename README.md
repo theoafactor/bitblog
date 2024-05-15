@@ -48,35 +48,16 @@ List the ready features here:
 
 
 ## Setup
-1. Install XAMPP or WAMPP
+1. Create your Docker images using the Dockerfiles available ar the root directory of the project
 
-2. Open XAMPP Control panal and start [apache] and [mysql] .
+2. Create your deployment files, don't forget to set your environment variables
 
-3. Download project from github(https://github.com/MobinaJafarian/BitBlog)  
-    OR follow gitbash commands
-    
-    i>cd C:\\xampp\htdocs\
-    
-    ii>git clone https://github.com/MobinaJafarian/BitBlog.git
-    
-4. extract files in C:\\xampp\htdocs\.
+3. The following are the environment variables to be set: 
+    - DB_HOSTNAME: this is the hostname of the application. m
+    - DB_USERNAME: The 
+    - DB_PASSWORD
+    - BASE_URL_PATH
 
-5. open link localhost/phpmyadmin
-
-6. click on new at side navbar.
-
-7. give a database name as (bit-blog) hit on create button.
-
-8. after creating database name click on import.
-
-9. browse the file in directory
-[BitBlog/assets/database/bit-blog.sql].
-
-10. after importing successfully.
-
-11. open any browser and type http://localhost/BitBlog/
-
-12. first register and then login
 
 13. admin login details: 
 - Email = admin@gmail.com 

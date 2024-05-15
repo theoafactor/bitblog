@@ -1,7 +1,14 @@
 <?php
+require "../vendor/autoload.php";
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Read from the environment variable
+$base_url_path = $_ENV['BASE_URL_PATH']; // the default used to be: http://localhost/bitblog/
 
 //config
-define('BASE_URL', 'http://localhost/bitblog/');
+define('BASE_URL', "$base_url_path");
 
 function redirect($url) 
 {    

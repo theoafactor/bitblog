@@ -1,0 +1,18 @@
+{
+    "name": "theoafactor/bitblog_devops",
+    "description": "This is the modified Bitblog application setup for DevOps",
+    "autoload": {
+        "psr-4": {
+            "Theoafactor\\BitblogDevops\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Olu Adeyemo",
+            "email": "theoafactor@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
