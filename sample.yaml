@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: testconfig
+data:
+  key: value
+binaryData:
+  username: bXl1c2Vy
