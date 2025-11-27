@@ -1,5 +1,9 @@
 <?php
-require "../vendor/autoload.php";
+//require_once __DIR__
+// require_once "../autoload.php";
+$document_root = $_SERVER["DOCUMENT_ROOT"];
+
+require_once $document_root . "/vendor/autoload.php";
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
